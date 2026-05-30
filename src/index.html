@@ -96,14 +96,17 @@
         <!-- Background Image Fallback -->
         <div class="absolute inset-0 z-0 opacity-40 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1585747860715-2ba37e788b70?ixlib=rb-4.0.3&auto=format&fit=crop&w=2074&q=80');"></div>
         
-        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto mt-16 md:mt-24">
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto mt-4 md:mt-12 md:mt-24">
             <div class="mb-2 flex justify-center">
                 <img src="images/logo.png" alt="On Point Barber Shop Logo" class="w-80 sm:w-96 md:w-[32rem] lg:w-80 h-auto object-contain drop-shadow-2xl">
             </div>
             
-            <h2 data-i18n="hero_title" class="text-4xl md:text-6xl font-heading font-bold text-white mb-6 uppercase tracking-wide">Stay Sharp, Look Fresh</h2>
+            <h2 data-i18n="hero_title" class="text-4xl md:text-6xl font-heading font-bold text-white mb-2 md:mb-6 uppercase tracking-wide">Stay Sharp, Look Fresh</h2>
             <p data-i18n="hero_desc" class="text-xl md:text-2xl text-gray-300 mb-10 max-w-2xl mx-auto">Premium grooming services in the heart of Washington Heights. Walk-ins always welcome.</p>
              <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#booking" data-i18n="hero_btn_book" class="bg-brand-red hover:bg-red-700 text-white px-6 py-3 rounded-full font-heading font-bold text-lg transition duration-300 shadow-lg border border-brand-red flex items-center justify-center gap-2">
+                    <i class="far fa-calendar-check"></i> Book Appointment
+                </a>
                 <a href="#services" data-i18n="hero_btn_services" class="bg-white text-brand-dark hover:bg-gray-200 px-8 py-4 rounded-full font-heading font-bold text-xl transition duration-300 shadow-lg">View Services</a>
                 <a href="https://maps.google.com/?q=504+W+207+St,+NY,+NY+10034" target="_blank" data-i18n="hero_btn_directions" class="bg-brand-blue hover:bg-blue-800 text-white px-8 py-4 rounded-full font-heading font-bold text-xl transition duration-300 shadow-lg border border-brand-blue">Get Directions</a>
             </div>
@@ -319,30 +322,29 @@
                             </div>
                         </div>
 
-                        <!-- Business Hours -->
+                        <!-- Business Hours block -->
                         <div class="flex items-start gap-4">
-                            <div class="bg-gradient-to-br from-brand-yellow to-yellow-600 p-3 rounded-full shrink-0 shadow-lg border border-yellow-500">
+                            <div class="bg-gradient-to-br from-gray-700 to-gray-900 p-3 rounded-full shrink-0 shadow-lg border border-gray-500">
                                 <i class="fas fa-clock text-xl w-6 text-center text-white"></i>
                             </div>
-                            <div>
+                            <div class="flex-1 w-full pr-2 md:pr-8">
                                 <h4 data-i18n="contact_hours" class="font-heading font-bold text-xl mb-2 text-brand-yellow">Business Hours</h4>
-                                <ul class="text-lg space-y-1 text-gray-200">
-                                    <li class="flex justify-between w-56 border-b border-gray-700 pb-1 mb-1 border-dashed">
-                                        <span data-i18n="day_mon_thu" class="font-bold">Mon - Thu:</span> 
-                                        <span>8:00 AM - 10:00 PM</span>
+                                <ul class="space-y-2 text-base sm:text-lg w-full max-w-[280px]">
+                                    <li class="flex justify-between items-center border-b border-gray-700 pb-1">
+                                        <span data-i18n="hours_mon_thu" class="font-medium whitespace-nowrap mr-2">Mon - Thu</span>
+                                        <span class="text-right whitespace-nowrap">8:00 AM - 10:00 PM</span>
                                     </li>
-                                    <li class="flex justify-between w-56 border-b border-gray-700 pb-1 mb-1 border-dashed">
-                                        <span data-i18n="day_fri_sat" class="font-bold">Fri - Sat:</span> 
-                                        <span>8:00 AM - 11:00 PM</span>
+                                    <li class="flex justify-between items-center border-b border-gray-700 pb-1">
+                                        <span data-i18n="hours_fri_sat" class="font-medium whitespace-nowrap mr-2">Fri - Sat</span>
+                                        <span class="text-right whitespace-nowrap">8:00 AM - 11:00 PM</span>
                                     </li>
-                                    <li class="flex justify-between w-56">
-                                        <span data-i18n="day_sun" class="font-bold">Sunday:</span> 
-                                        <span>8:00 AM - 10:00 PM</span>
+                                    <li class="flex justify-between items-center border-b border-gray-700 pb-1">
+                                        <span data-i18n="hours_sun" class="font-medium whitespace-nowrap mr-2">Sun</span>
+                                        <span class="text-right whitespace-nowrap">8:00 AM - 10:00 PM</span>
                                     </li>
                                 </ul>
                             </div>
                         </div>
-
                     </div>
                 </div>
 
@@ -409,6 +411,7 @@
                 hero_desc: "Premium grooming services in the heart of Washington Heights. Walk-ins always welcome.",
                 hero_btn_services: "View Services",
                 hero_btn_directions: "Get Directions",
+                hero_btn_book: "Book Appointment",
                 services_title: "Our Services",
                 services_subtitle: "Sorry, NO CASH REFUNDS",
                 services_adults: "Adults",
@@ -450,6 +453,7 @@
                 hero_desc: "Servicios de barbería premium en el corazón de Washington Heights. Siempre bienvenidos sin cita.",
                 hero_btn_services: "Ver Servicios",
                 hero_btn_directions: "Obtener Direcciones",
+                hero_btn_book: "Book Appointment",
                 services_title: "Nuestros Servicios",
                 services_subtitle: "Lo sentimos, NO HAY DEVOLUCIONES EN EFECTIVO",
                 services_adults: "Adultos",
